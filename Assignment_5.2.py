@@ -19,11 +19,11 @@ while True:
             smallest = num
         if num > largest:
             largest = num
-    	if num < smallest:
-        	smallest = num
+        if num < smallest:
+            smallest = num
     except:
-        if num == "done": 
-        	break
+        if num == "done":
+            break
         else:
             print "Invalid input"
     

@@ -10,7 +10,7 @@
 
 def computepay(h,r):
     if(h<=40):
-    	p=h*r
+        p=h*r
     else:
         p=40*r+((h-40)*1.5*r)
     return p
