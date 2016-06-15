@@ -11,8 +11,8 @@ for line in fhand:
 		maildict[mail] = maildict.get(mail,0) + 1
 
 
-greatestmail = 0
-greatestcount = 0
+greatestmail = None
+greatestcount = None
 
 for mail,count in maildict.items():
 	if greatestcount is None or count > greatestcount:
