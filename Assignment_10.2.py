@@ -17,15 +17,16 @@
 # 19 1
 
 name = raw_input("Enter file:")
-if len(name) < 1 : name = "mbox-short.txt"
+if len(name) < 1:
+    name = "mbox-short.txt"
 fhandle = open(name)
 dic = {}
 for line in fhandle:
-	if line.startswith("From "):
-		hour = line.split()[5].split(":")[0]
-		dic[hour]=dic.get(hour,0) + 1
+    if line.startswith("From "):
+        hour = line.split()[5].split(":")[0]
+        dic[hour] = dic.get(hour, 0) + 1
 
 lst = dic.items()
 lst.sort()
-for v,k in lst:
-	print v, k
+for v, k in lst:
+    print v, k
